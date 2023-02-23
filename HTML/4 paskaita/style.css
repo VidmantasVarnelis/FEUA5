@@ -1,0 +1,21 @@
+p {
+  width: 45%;
+  display: inline-block;
+}
+body div img {
+  width: 45%;
+}
+#my-para {
+  color: blue;
+  font-size: 28px;
+}
+.test-class {
+  font-size: 40px;
+}
+.another-class {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 120px;
+}

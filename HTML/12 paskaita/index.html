@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        height: 200vh;
+      }
+
+      .flex-container {
+        height: 100px;
+        border: 1px solid black;
+        display: flex;
+      }
+      .flex-item {
+        height: 50px;
+        width: 50px;
+        background-color: red;
+      }
+
+      .flex-item:nth-child(even) {
+        background-color: burlywood;
+      }
+
+      .flex-container.first {
+        justify-content: space-around;
+      }
+
+      .flex-container.second {
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .flex-container.third {
+        height: 300px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .flex-container.fourth {
+        height: 300px;
+
+        align-items: stretch;
+      }
+      .flex-container.fourth .flex-item {
+        height: auto;
+        width: 80px;
+      }
+      .fourth .flex-item:nth-child(3) {
+        align-self: center;
+      }
+
+      .flex-container.fifth {
+        height: 300px;
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .flex-container.fifth .flex-item {
+        height: 50px;
+        width: auto;
+      }
+
+      .fifth .flex-item:nth-child(2) {
+        align-self: center;
+      }
+
+      .flex-container.sixth {
+        height: auto;
+        flex-wrap: wrap-reverse;
+      }
+
+      .flex-container.seventh {
+        height: 500px;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+      }
+
+      .flex-container.last-one {
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h4>justify-content</h4>
+
+      <div class="flex-container first">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+      </div>
+    </section>
+
+    <section>
+      <h4>align-items; justify-content</h4>
+
+      <div class="flex-container second">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+      </div>
+    </section>
+
+    <section>
+      <h4>flex-direction</h4>
+
+      <div class="flex-container third">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+      </div>
+    </section>
+
+    <section>
+      <h4>align-items: stretch; align-self (child items only!)</h4>
+
+      <div class="flex-container fourth">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+      </div>
+    </section>
+
+    <section>
+      <h4>
+        align-items: stretch; flex-direction: column; align-self (child items
+        only!)
+      </h4>
+
+      <div class="flex-container fifth">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+      </div>
+    </section>
+
+    <section>
+      <h4>flex-wrap: wrap</h4>
+
+      <div class="flex-container sixth">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+      </div>
+    </section>
+
+    <section>
+      <h4>flex-wrap: wrap</h4>
+
+      <div class="flex-container seventh">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+      </div>
+    </section>
+
+    <section>
+      <h4>flex-wrap: wrap</h4>
+
+      <div class="flex-container last-one">
+        <div class="flex-item" style="order: 1">1</div>
+        <div class="flex-item" style="order: 3">2</div>
+        <div class="flex-item" style="order: 2">3</div>
+        <div class="flex-item" style="order: 4">4</div>
+        <div class="flex-item" style="order: 5">5</div>
+        <div class="flex-item" style="order: 7">6</div>
+        <div class="flex-item" style="order: 6">7</div>
+        <div class="flex-item" style="order: 8">8</div>
+      </div>
+    </section>
+
+    <!-- 
+    <section>
+        <h4>Display: flex</h4>
+  
+        <div class="flex-container">
+          
+        </div>
+      </section>
+       -->
+  </body>
+</html>

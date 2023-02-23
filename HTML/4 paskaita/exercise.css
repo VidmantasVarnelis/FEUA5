@@ -1,0 +1,39 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(111, 46, 131);
+}
+
+.container {
+  background-color: rgb(65, 34, 75);
+  width: 600px;
+  border: 6px dotted rgb(201, 155, 47);
+  padding: 40px 25px 25px 25px;
+  color: rgb(176, 44, 44);
+  margin: 0 auto;
+}
+
+h1 {
+  color: rgb(201, 155, 47);
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+p span {
+  font-size: 40px;
+}

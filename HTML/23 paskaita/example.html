@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .image-container {
+        position: relative;
+      }
+      .image-container::after {
+        content: "";
+        background-color: blueviolet;
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        transition: opacity 0.15s ease-in;
+      }
+      .image-container span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        z-index: 5;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.15s ease-in;
+      }
+
+      .image-container:hover::after {
+        opacity: 0.75;
+      }
+      .image-container:hover span {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img src="https://picsum.photos/300/300" alt="" />
+      <span>OOO</span>
+    </div>
+    <div class="image-container">
+      <img src="https://picsum.photos/300/300" alt="" />
+      <span>OOO</span>
+    </div>
+    <div class="image-container">
+      <img src="https://picsum.photos/300/300" alt="" />
+      <span>OOO</span>
+    </div>
+  </body>
+</html>

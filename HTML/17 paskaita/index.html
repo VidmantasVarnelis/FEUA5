@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        background-color: lightblue;
+        border: 4px solid lightcoral;
+        min-height: 300px;
+        display: grid;
+        grid-template-columns: repeat(3, 150px);
+        /* min-max ir auto-fit/auto-fill(repeat) */
+        /* grid-template-columns: repeat(3, minmax(200px, 400px)); */
+        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+        /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+        grid-template-rows: minmax(50px, 1fr) 100px;
+        /* grid-auto-rows: minmax(50px, 1fr); */
+        /* Grid naudoja start - end. Flexbox flex-start/ flex-end */
+        /* Lygiavimas isoreje */
+        justify-content: center;
+        align-content: center;
+        /* vaikam - horiztalus lygiavimas */
+        justify-items: end;
+        /* vaikam - vertikalus lygiavimas */
+        align-items: start;
+        /* strech yra default verte */
+        justify-items: stretch;
+        align-items: stretch;
+      }
+      .grid-item {
+        background-color: lightslategray;
+        border: 2px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* .grid-item:first-child{
+				justify-self: center;
+				align-self: center;
+			} */
+      .grid-container {
+        border: 4px solid lightcoral;
+        background-color: lightblue;
+        min-height: 300px;
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-areas:
+          'header header nav'
+          'sidebar content content'
+          'footer footer footer';
+      }
+      .one {
+        grid-area: header;
+      }
+      .four {
+        grid-area: nav;
+      }
+      .three {
+        grid-area: sidebar;
+      }
+      .two {
+        grid-area: content;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grid lygiavimas ir auto-fit/auto-fill</h1>
+    <div class="container">
+      <div class="grid-item">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+        voluptatum quas nihil ut itaque porro obcaecati soluta rem atque
+        possimus, perspiciatis ipsam sint magnam excepturi ducimus similique
+        fugiat aliquid vitae?lore
+      </div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+    </div>
+    <h1>Grid Template Areas</h1>
+    <div class="grid-container">
+      <div class="grid-item one">1</div>
+      <div class="grid-item two">2</div>
+      <div class="grid-item three">3</div>
+      <div class="grid-item four">4</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+// :root{
+// 	--pavadinimas: reiksme
+// }
+// panaudojimas var(--pavadinimas)
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+@import './variables';
+@import './hero.scss';
+@import './about-us';
+
+@mixin flexContainer($justify: flex-end) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+
+nav {
+  background-color: #333;
+  ul {
+    @include flexContainer($justify: center);
+    list-style: none;
+    gap: 1rem;
+    margin-right: 2rem;
+    height: 3rem;
+    li {
+      a {
+        color: $text-color;
+        text-decoration: none;
+        &:hover {
+          color: lightcoral;
+        }
+      }
+    }
+  }
+}
+
+// nav ul {
+//   display: flex;
+// }
+
+// nav ul li {
+//   color: white;
+// }

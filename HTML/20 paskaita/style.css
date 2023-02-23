@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  margin-top: 50px;
+  margin-left: 50px;
+  background-color: transparent;
+  box-shadow: 0px 4px 8px rgb(87, 87, 87);
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 0.25s;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 0px 4px 16px rgb(87, 87, 87);
+}
+
+.para {
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+@media (max-width: 1000px) {
+  .para {
+    font-size: 18px;
+  }
+}
+
+.parent {
+  border: 1px solid black;
+  position: relative;
+  height: 100px;
+}
+
+.child {
+  width: 100px;
+  background-color: aquamarine;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: left 3s cubic-bezier(0, 1.02, 0.96, 0.02);
+}
+
+.parent:hover .child {
+  left: 50%;
+}
+
+/* cube */
+
+.cube-container {
+  border: 1px solid black;
+  height: 400px;
+  position: relative;
+}
+
+@keyframes cube-animation {
+  0% {
+    background-color: yellow;
+    left: 0;
+  }
+  25% {
+    background-color: red;
+    top: 0;
+    left: 200px;
+  }
+  50% {
+    background-color: yellow;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: red;
+    left: 0;
+    top: 200px;
+  }
+  100% {
+    background-color: yellow;
+    left: 0;
+    top: 0;
+  }
+}
+
+.cube {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  animation-name: cube-animation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

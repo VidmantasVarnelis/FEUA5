@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.cars {
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  padding: 24px;
+}
+
+.cars .cars-inner {
+  padding: 48px;
+}
+
+.cars .cars-inner:first-child {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.cars .cars-inner:last-child {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.cars .cars-inner img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.cars .cars-inner h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 32px;
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 24px;
+}
+
+.cars .cars-inner p {
+  font-size: 14px;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.cars .cars-inner button {
+  padding: 16px 32px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Utility classes */
+.theme-orange {
+  background-color: hsl(31, 77%, 52%);
+}
+.theme-orange button {
+  color: hsl(31, 77%, 52%);
+}
+.theme-cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+.theme-cyan button {
+  color: hsl(184, 100%, 22%);
+}
+.theme-green {
+  background-color: hsl(179, 100%, 13%);
+}
+.theme-green button {
+  color: hsl(179, 100%, 13%);
+}

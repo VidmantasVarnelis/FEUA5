@@ -1,0 +1,138 @@
+.container {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.container::before,
+.container::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  z-index: 5;
+}
+
+.container::before {
+  top: 50%;
+}
+
+.container::after {
+  transform: rotate(90deg);
+  top: 50%;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  /* border-radius: 100%; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: aquamarine;
+  transform: translate(50%, 50%) rotate(45deg);
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* transform-origin: left center; */
+}
+
+.circle div {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: left center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.arrow {
+  width: 150px;
+  height: 3px;
+  background-color: blueviolet;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: spin;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: left center;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.loader-wrapper {
+  position: relative;
+  height: 100px;
+  width: 100px;
+}
+
+.heart-loader {
+  height: 100px;
+  width: 100px;
+  /* border: 1px solid black; */
+  position: absolute;
+  animation: pulse 1s linear infinite;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+}
+
+.heart-loader::before,
+.heart-loader::after {
+  content: "";
+  display: block;
+  width: 47%;
+  height: 75%;
+  background-color: rgb(161, 21, 21);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: absolute;
+  top: 15%;
+}
+
+.heart-loader::before {
+  transform: rotate(-45deg);
+  transform-origin: left bottom;
+  left: 50%;
+}
+
+.heart-loader::after {
+  transform: rotate(45deg);
+  transform-origin: right bottom;
+  right: 50%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+  25% {
+    transform: scale(1.25) translate(-50%, -50%);
+  }
+  50% {
+    transform: scale(0.75) translate(-50%, -50%);
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}

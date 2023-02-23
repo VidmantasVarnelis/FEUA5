@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Mano naujienos antraste</h1>
+
+    <img
+      srcset="
+        assets/large.jpeg  1000w,
+        assets/medium.jpeg  500w,
+        assets/small.jpeg   200w
+      "
+      src="assets/small.jpeg"
+      alt=""
+    />
+
+    <picture>
+      <source media="(max-width: 500px)" srcset="./assets/img-2.jpeg" />
+      <source media="(max-width: 700px)" srcset="./assets/img-3.jpeg" />
+      <source media="(max-width: 900px)" srcset="./assets/img-4.jpeg" />
+      <img src="./assets/img-1.jpeg" alt="" />
+    </picture>
+
+    <hr />
+
+    <div class="grid">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+  </body>
+</html>

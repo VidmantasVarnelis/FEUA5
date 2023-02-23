@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./reset.css" /> -->
+    <style>
+      h4 {
+        margin-bottom: 15px;
+      }
+      .table-1 {
+        border: 1px solid brown;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      .table-1 th {
+        padding: 5px 8px;
+      }
+      .table-1 td {
+        border: 1px solid blueviolet;
+        padding: 5px 8px;
+        vertical-align: top;
+      }
+      .table-1 tr {
+        background-color: blanchedalmond;
+      }
+      .text-right {
+        text-align: right;
+      }
+      .wide {
+        width: 200px;
+      }
+      /* Table 2 */
+      .table-2 {
+        border-spacing: 5px;
+      }
+
+      .table-2 td {
+        border: 1px solid black;
+        padding: 5px 8px;
+      }
+      /* Table 3 */
+      .table-3 {
+        border-collapse: collapse;
+      }
+      .table-3 th {
+        padding: 5px 15px;
+        background-color: dodgerblue;
+        color: white;
+        border: none;
+      }
+      .table-3 td {
+        padding: 5px 15px;
+        color: black;
+        border: 1px solid dodgerblue;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Ex. 1</h4>
+
+    <table class="table-1">
+      <tr>
+        <th>First First</th>
+        <th>Second Second</th>
+        <th>Amount</th>
+      </tr>
+      <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+        <td class="text-right">1000</td>
+      </tr>
+      <tr>
+        <td class="wide">Cell 4 Cell 4 Cell 4 Cell 4 Cell 4</td>
+        <td>Cell 5</td>
+        <td class="text-right">960</td>
+      </tr>
+      <caption>
+        My lower caption
+      </caption>
+    </table>
+
+    <h4>Ex. 2</h4>
+
+    <table class="table-2">
+      <thead>
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">C1</td>
+          <td>C2</td>
+          <td>C3</td>
+          <td>C4</td>
+          <td>C5</td>
+        </tr>
+        <tr>
+          <td>C1</td>
+          <td>C2</td>
+          <td>C3</td>
+          <td colspan="3">C4</td>
+        </tr>
+        <tr>
+          <td colspan="6">C1</td>
+        </tr>
+        <tr>
+          <td rowspan="2">C1</td>
+          <td>C2</td>
+          <td>C3</td>
+          <td>C4</td>
+          <td>C5</td>
+          <td>C6</td>
+        </tr>
+        <tr>
+          <td>C1</td>
+          <td>C2</td>
+          <td>C3</td>
+          <td>C4</td>
+          <td>C5</td>
+        </tr>
+        <tr>
+          <td>C1</td>
+          <td>C2</td>
+          <td>C3</td>
+          <td rowspan="3" colspan="3">C4</td>
+        </tr>
+        <tr>
+          <td>C1</td>
+          <td>C2</td>
+          <td>C3</td>
+        </tr>
+        <tr>
+          <td>C1</td>
+          <td>C2</td>
+          <td>C3</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4>Ex. 3</h4>
+
+    <table class="table-3">
+      <thead>
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>2</th>
+          <td>4</td>
+          <td>6</td>
+          <td>8</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>6</td>
+          <td>9</td>
+          <td>12</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>8</td>
+          <td>12</td>
+          <td>16</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>10</td>
+          <td>15</td>
+          <td>20</td>
+          <td>25</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

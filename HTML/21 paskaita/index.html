@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+
+      .header {
+        height: 50px;
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .header ul {
+        display: flex;
+        list-style: none;
+      }
+      a {
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="#" alt="" />
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Articles</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <p aria-label="My input label" id="input-name">First name:</p>
+    <input type="text" aria-labelledby="input-name" />
+
+    <label for="last-name">Last name:</label>
+    <input type="text" id="last-name" name="last-name" />
+  </body>
+</html>

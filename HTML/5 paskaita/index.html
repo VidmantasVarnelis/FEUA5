@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        border: 5px solid black;
+        padding: 20px;
+        background-color: antiquewhite;
+        margin: 20px;
+      }
+      .space-top {
+        margin-top: 40px;
+      }
+      .box-2 {
+        width: 200px;
+        height: 200px;
+        background-color: antiquewhite;
+        margin-bottom: 20px;
+        padding: 50px;
+        border: 10px solid black;
+      }
+      .border-box {
+        box-sizing: border-box;
+        margin-left: auto;
+      }
+      .link {
+        font-size: 32px;
+        padding: 10px;
+        border: 2px solid black;
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+      .para {
+        font-size: 20px;
+        padding: 40px;
+      }
+      .para span {
+        font-size: 32px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-right: 5px;
+
+        padding: 20px 5px;
+      }
+      .first-box {
+        width: calc(300px - 2 * 30px - 2 * 4px);
+        height: calc(300px - 2 * 30px - 2 * 4px);
+        padding: 30px;
+        border: 4px solid black;
+      }
+      .parent-el {
+        height: 500px;
+        background-color: antiquewhite;
+      }
+      .child-el {
+        height: 50px;
+        width: 50px;
+        background-color: brown;
+        margin: 50px auto 20px auto;
+      }
+
+      .child {
+        max-width: calc(100% / 3 - 10px);
+        width: 100%;
+        height: 100px;
+        background-color: aquamarine;
+        display: inline-block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">first</div>
+    <div class="box space-top">second</div>
+
+    <div class="space-top">
+      <div class="box-2 content-box"></div>
+
+      <div class="box-2 border-box"></div>
+    </div>
+
+    <a href="#" class="link">Our Link</a>
+
+    <p class="para">
+      <span>L</span>orem ipsum dolor, sit amet consectetur adipisicing elit.
+      Mollitia dignissimos architecto eos inventore distinctio accusamus
+      officiis earum laudantium doloribus ipsam qui iste, accusantium ex dolore
+      rem, voluptatum veniam deleniti eum!
+    </p>
+
+    <div class="first-box">text</div>
+
+    <hr />
+    <h2>Margin</h2>
+
+    <div class="parent-el">
+      <div class="child-el"></div>
+    </div>
+
+    <div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      *:focus {
+        outline: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>1.</h4>
+
+    <form action="" method="get">
+      <input type="text" name="first-name" required />
+      <input type="email" name="your-email" />
+      <input type="password" name="password" />
+
+      <!-- Types of submit buttons -->
+      <input type="reset" />
+      <!-- or -->
+      <button type="submit">Submit</button>
+    </form>
+
+    <hr />
+
+    <h4>2.</h4>
+
+    <form action="" method="get">
+      <div>
+        <label for="second-name">Your name:</label><br />
+        <input
+          type="text"
+          name="first-name"
+          id="second-name"
+          value="Lukas"
+          readonly
+        />
+      </div>
+
+      <div>
+        <label for="second-password">Password:</label><br />
+        <input
+          type="password"
+          name="password"
+          id="second-password"
+          maxlength="4"
+        />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <hr />
+
+    <h4>3.</h4>
+
+    <form action="" method="get">
+      <fieldset disabled>
+        <legend>General information:</legend>
+        <label for="third-name">Name:</label><br />
+        <input type="text" name="third-name" id="third-name" /><br />
+
+        <label for="third-last-name">Last name:</label><br />
+        <input type="text" name="third-last-name" id="third-last-name" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Shipping address:</legend>
+        <label for="third-street-name">Street name:</label><br />
+        <input
+          type="text"
+          name="third-street-name"
+          id="third-street-name"
+        /><br />
+
+        <label for="third-house-number">House number:</label><br />
+        <input type="text" name="third-house-number" id="third-house-number" />
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <hr />
+
+    <h4>4.</h4>
+
+    <form action="" method="get">
+      <label for="city-select">Pick your city:</label><br />
+      <select name="city" id="city-select">
+        <option value="vilnius">Vilnius</option>
+        <option value="salcininkai">Šalčininkai</option>
+      </select>
+      <br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <hr />
+
+    <h4>5.</h4>
+
+    <form action="" method="get">
+      <div>
+        <label for="number-input">Number input:</label><br />
+        <input
+          type="number"
+          name="number-input"
+          id="number-input"
+          min="-5"
+          max="5"
+          step="5"
+        />
+      </div>
+
+      <div>
+        <label for="date-input">Date input:</label><br />
+        <input type="date" name="date-input" id="date-input" />
+      </div>
+
+      <div>
+        <label for="file-input">File input:</label><br />
+        <input
+          type="file"
+          name="file-input"
+          id="file-input"
+          multiple
+          accept="image/png"
+        />
+      </div>
+
+      <br />
+      <br />
+
+      <div>
+        <label for="radio1-input">Apple:</label>
+        <input
+          type="radio"
+          name="fav-fruit"
+          id="radio1-input"
+          value="apple"
+          checked
+        />
+      </div>
+      <div>
+        <label for="radio2-input">Strawberry:</label>
+        <input
+          type="radio"
+          name="fav-fruit"
+          id="radio2-input"
+          value="strawberry"
+        />
+      </div>
+      <div>
+        <label for="radio3-input">Banana:</label>
+        <input type="radio" name="fav-fruit" id="radio3-input" value="banana" />
+      </div>
+
+      <br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <hr />
+  </body>
+</html>

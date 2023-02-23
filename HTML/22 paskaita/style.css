@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: hsl(210, 10%, 33%);
+}
+
+p {
+  color: hsl(201, 11%, 66%);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.btn {
+  color: white;
+  padding: 0.75rem 3rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 3rem;
+  background-color: hsl(171, 66%, 44%);
+}
+
+.btn-secondary {
+  background-color: hsl(233, 100%, 69%);
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+/* HERO SECTION */
+
+.hero {
+  text-align: center;
+  background-image: linear-gradient(to bottom, transparent, white),
+    url(assets/images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 3rem;
+}
+
+.hero img {
+  width: 80px;
+  height: 80px;
+  margin: 5rem 0 3rem;
+}
+
+.hero p {
+  margin-bottom: 1.5rem;
+}
+
+.hero button {
+  width: 100%;
+}
+.hero button:first-of-type {
+  margin-bottom: 1rem;
+}
+
+/* ============================================ */
+
+/* Snippets section */
+
+.snippets {
+  padding: 4rem 0;
+}
+
+.snippets .heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.snippets .content img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 3rem;
+}
+
+.snippets .content .text-container {
+  text-align: center;
+}
+
+.snippets .content .text-container p:not(:last-of-type) {
+  margin-bottom: 3rem;
+}
+
+/* Media Query */
+
+@media (min-width: 768px) {
+  /* Hero section */
+  .hero {
+    background-image: linear-gradient(to bottom, transparent, white),
+      url(assets/images/bg-header-desktop.png);
+  }
+  .hero .container {
+    max-width: 35rem;
+    margin: 0 auto;
+  }
+  .hero button {
+    width: max-content;
+  }
+  /* ========================= */
+
+  /* Snippets section */
+
+  .snippets .heading {
+    max-width: 30rem;
+    margin: 0 auto 3rem;
+  }
+  .snippets .content {
+    display: flex;
+    gap: 3rem;
+  }
+  .snippets .content img {
+    transform: translateX(-50px);
+    max-width: 800px;
+    flex: 0.6;
+  }
+  .snippets .content .text-container {
+    flex: 0.4;
+    text-align: left;
+    padding-top: 3rem;
+  }
+  .snippets .content .text-container p {
+    max-width: 20rem;
+  }
+
+  /* ========================= */
+}

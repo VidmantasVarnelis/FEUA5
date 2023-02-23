@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* For debugging */
+      td {
+        /* border: 1px solid red; */
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      cellspacing="0"
+      cellpadding="0"
+      style="font-family: Arial, Helvetica, sans-serif; color: rgb(28, 40, 49)"
+    >
+      <tbody>
+        <tr>
+          <!-- First colored cell/column: spans 3 rows -->
+          <td
+            rowspan="3"
+            width="50"
+            style="background-color: rgb(28, 40, 49)"
+          ></td>
+          <!-- Second colored cell: above photo -->
+          <td
+            width="60"
+            height="30"
+            style="background-color: rgb(28, 40, 49)"
+          ></td>
+          <!-- Third white cell: above photo -->
+          <td width="60"></td>
+          <!-- Spacing col between photo and details -->
+          <td width="20" rowspan="3"></td>
+          <!-- Empty cell as spacing: above details -->
+          <td></td>
+          <td width="10" rowspan="3"></td>
+          <td width="10" rowspan="3">
+            <div
+              style="
+                height: 65px;
+                width: 2px;
+                border-left: 2px solid rgb(28, 40, 49);
+              "
+            ></div>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <!-- Image cell: spans 2 cols -->
+          <td colspan="2">
+            <img
+              src="https://picsum.photos/100"
+              alt=""
+              style="display: block; border: 10px solid rgb(28, 40, 49)"
+            />
+          </td>
+          <!-- Details cell -->
+          <td style="vertical-align: bottom">
+            <h4 style="margin: 0; font-size: 20px">
+              <span style="color: rgb(247, 228, 61)">JOHN</span> SMITH
+            </h4>
+
+            <h5 style="margin: 0; font-size: 12px; margin-bottom: 6px">
+              CEO & FOUNDER
+            </h5>
+            <div
+              style="border-bottom: 2px solid rgb(247, 228, 61); width: 45px"
+            ></div>
+            <p
+              style="
+                margin: 0;
+                font-size: 8px;
+                margin-top: 6px;
+                margin-bottom: 10px;
+              "
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+              odio.
+            </p>
+
+            <table cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#" style="display: block; margin-right: 4px">
+                      <img
+                        style="display: block"
+                        src="https://firebasestorage.googleapis.com/v0/b/uploads-fdab0.appspot.com/o/git.png?alt=media&token=2508461f-9857-438d-91b6-ef021ee4b6bb"
+                        alt=""
+                      />
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#" style="display: block; margin-right: 4px">
+                      <img
+                        style="display: block"
+                        src="https://firebasestorage.googleapis.com/v0/b/uploads-fdab0.appspot.com/o/git.png?alt=media&token=2508461f-9857-438d-91b6-ef021ee4b6bb"
+                        alt=""
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <!-- Contacts -->
+          <td>
+            <table cellpadding="0" style="border-spacing: 5px">
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      style="display: block"
+                      src="https://firebasestorage.googleapis.com/v0/b/uploads-fdab0.appspot.com/o/git.png?alt=media&token=2508461f-9857-438d-91b6-ef021ee4b6bb"
+                      alt=""
+                    />
+                  </td>
+                  <td>
+                    <a
+                      href="#"
+                      style="text-decoration: none; color: rgb(28, 40, 49)"
+                      >www.something.com</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      style="display: block"
+                      src="https://firebasestorage.googleapis.com/v0/b/uploads-fdab0.appspot.com/o/git.png?alt=media&token=2508461f-9857-438d-91b6-ef021ee4b6bb"
+                      alt=""
+                    />
+                  </td>
+                  <td>
+                    <a
+                      href="#"
+                      style="text-decoration: none; color: rgb(28, 40, 49)"
+                      >www.something.com</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      style="display: block"
+                      src="https://firebasestorage.googleapis.com/v0/b/uploads-fdab0.appspot.com/o/git.png?alt=media&token=2508461f-9857-438d-91b6-ef021ee4b6bb"
+                      alt=""
+                    />
+                  </td>
+                  <td>
+                    <a
+                      href="#"
+                      style="text-decoration: none; color: rgb(28, 40, 49)"
+                      >www.something.com</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <!-- Second colored cell: below photo -->
+          <td height="30" style="background-color: rgb(28, 40, 49)"></td>
+          <!-- Third white cell: below photo -->
+          <td></td>
+          <!-- Empty cell as spacing: below details -->
+          <td></td>
+          <!-- Spacing after contacts -->
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Preview of final result: -->
+    <!-- <img
+      src="https://www.shutterstock.com/image-vector/colorful-email-signatures-template-vector-600w-2104017830.jpg"
+      alt=""
+    /> -->
+  </body>
+</html>

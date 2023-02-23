@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      .payment-form input:focus,
+      .payment-form select:focus {
+        outline: 1px solid rgb(121, 121, 121);
+      }
+
+      .payment-form .card-number:in-range {
+        border: 2px solid green;
+      }
+      .payment-form .card-number:out-of-range {
+        border: 2px solid red;
+      }
+
+      .payment-form input:invalid,
+      .payment-form select:invalid {
+        outline: 2px solid red;
+      }
+      .payment-form input:valid,
+      .payment-form select:valid {
+        border: 2px solid green;
+      }
+
+      .payment-form button {
+        background-color: lightseagreen;
+      }
+      .payment-form button:hover {
+        background-color: darkseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Payment Form</h1>
+      <p>Required field are fallowed by *.</p>
+    </header>
+    <main>
+      <form class="payment-form" action="" style="width: 300px">
+        <h1>Contact information</h1>
+        <fieldset>
+          <legend>Title</legend>
+          <div>
+            <input type="radio" name="title" id="mr" required />
+            <label for="mr">Mr.</label>
+          </div>
+          <div>
+            <input type="radio" name="title" id="mrs" required />
+            <label for="mrs">Mrs.</label>
+          </div>
+        </fieldset>
+        <div>
+          <label for="name">Name: *</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div>
+          <label for="email">Email: *</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div>
+          <label for="password">Password: *</label>
+          <input type="password" name="password" id="password" required />
+        </div>
+        <h1>Payment Information</h1>
+        <div>
+          <label for="type">Card Type: *</label>
+          <select id="type" required>
+            <option value="visa">Visa</option>
+            <option value="mastercard">MasterCard</option>
+          </select>
+        </div>
+        <div>
+          <label for="number">Card Number: *</label>
+          <input
+            class="card-number"
+            type="number"
+            min="999999999999999"
+            max="10000000000000000"
+            id="number"
+            required
+          />
+        </div>
+        <div>
+          <label for="date">Expiration date: *</label>
+          <input type="month" id="date" required />
+        </div>
+        <button type="submit">Validate the payment</button>
+      </form>
+    </main>
+  </body>
+</html>

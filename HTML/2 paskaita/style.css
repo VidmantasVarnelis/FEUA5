@@ -1,0 +1,50 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(./images/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 200vh;
+}
+a {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+span {
+  color: white;
+}
+
+h1 {
+  color: blue;
+  font-size: 70px;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-size: 18px;
+  background-color: rgba(255, 255, 255);
+}
+
+#my-special-element {
+  color: #5c9ead;
+}
+
+.text-crimson {
+  color: rgba(0, 0, 0);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.narrow {
+  width: 300px;
+}
+
+.text-bold {
+  font-weight: 600;
+  color: #ff0000;
+}
+
+img {
+  border: 5px solid blue;
+}

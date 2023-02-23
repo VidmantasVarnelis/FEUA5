@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        border: 2px solid black;
+        height: 300px;
+        gap: 6px;
+        background-color: lightblue;
+        /* overflow: hidden; */
+      }
+      .flex-item {
+        background-color: lightcoral;
+        width: 60px;
+        height: 60px;
+      }
+      /* .one {
+        flex-grow: 1;
+      }
+      .three {
+        flex-grow: 2;
+      }
+      .two {
+        flex-grow: 1;
+      } */
+      .five {
+        width: 500px;
+        flex-shrink: 0;
+      }
+      .six {
+        flex-shrink: 0;
+      }
+      .eight {
+        /* flex-basis by default yra auto */
+        flex-basis: 200px;
+        flex-grow: 1;
+        /* flex-grow: 1, flex-shrink: 1; flex-basis: 0 */
+        /* flex: 2; */
+      }
+      .nine {
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex grow:</h1>
+    <div class="container">
+      <div class="flex-item one">One</div>
+      <div class="flex-item two">Two</div>
+      <div class="flex-item three">Three</div>
+    </div>
+    <h1>Flex shrink:</h1>
+    <div class="container">
+      <div class="flex-item four">four</div>
+      <div class="flex-item five">five</div>
+      <div class="flex-item six">six</div>
+    </div>
+    <h1>Flex basis:</h1>
+    <div class="container">
+      <div class="flex-item seven">seven</div>
+      <div class="flex-item eight">eight</div>
+      <div class="flex-item nine">nine</div>
+    </div>
+  </body>
+</html>

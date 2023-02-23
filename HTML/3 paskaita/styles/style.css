@@ -1,0 +1,20 @@
+header,
+main,
+footer {
+  background-color: lightgray;
+}
+
+.first-section {
+  padding: 10px 0 100px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+.second-section div {
+  display: inline-block;
+  width: 50%;
+}
