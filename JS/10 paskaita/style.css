@@ -1,0 +1,35 @@
+/* h1 {
+  background-color: purple;
+}
+
+.primary-heading {
+  background-color: royalblue;
+  font-size: 3.5rem;
+} */
+
+.box {
+  min-height: 20rem;
+  max-width: 50rem;
+  margin: 0 auto 4rem;
+  background-color: lightgray;
+}
+
+#output {
+  position: relative;
+}
+#output h1 {
+  position: absolute;
+}
+
+.position-top {
+  top: 0;
+}
+.position-bottom {
+  bottom: 0;
+}
+.position-left {
+  left: 0;
+}
+.position-right {
+  right: 0;
+}
