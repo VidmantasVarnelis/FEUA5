@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.guest-list {
+  padding: 3rem;
+  .guests {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    .guest {
+      flex-grow: 1;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      width: 20rem;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+      .content {
+        padding: 1.5rem;
+        .grid-container {
+          margin-top: 1rem;
+          display: grid;
+          gap: 0.5rem;
+        }
+      }
+    }
+  }
+}

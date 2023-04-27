@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Property</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Add Your Property To Sell</h1>
+      <p>Some text</p>
+    </header>
+
+    <nav>
+      <a href="./index.html"> Back </a>
+    </nav>
+
+    <div class="container">
+      <form id="add-property">
+        <div>
+          <label for="">Image URL:</label>
+          <input type="text" name="image" />
+        </div>
+        <div>
+          <label for="">Price, EUR:</label>
+          <input type="number" name="price" />
+        </div>
+        <div>
+          <label for="">Description:</label>
+          <textarea name="description" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+          <label for="">City:</label>
+          <select name="city">
+            <option value="Vilnius">Vilnius</option>
+            <option value="Kaunas">Kaunas</option>
+            <option value="Klaipeda">Klaipeda</option>
+          </select>
+        </div>
+        <button>Add Property</button>
+      </form>
+      <p id="message"></p>
+    </div>
+    <script src="./add.js"></script>
+  </body>
+</html>

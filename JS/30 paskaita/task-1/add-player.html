@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="add-player">
+        <h1>Create a Player</h1>
+        <input type="text" name="name" id="name" placeholder="Player name" />
+        <input
+          type="text"
+          name="year"
+          id="year"
+          placeholder="Player year of birth"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Player contact email"
+        />
+        <div>
+          <input type="radio" name="attributes" id="fast" value="Fast" />
+          <label for="fast">Fast</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="attributes"
+            id="conditioning"
+            value="Good conditioning"
+          />
+          <label for="conditioning">Good conditioning</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="attributes"
+            id="athletism"
+            value="Good athletism"
+          />
+          <label for="athletism">Good athletism</label>
+        </div>
+        <button type="submit">Create Player</button>
+      </form>
+    </div>
+
+    <script src="add-player.js"></script>
+  </body>
+</html>

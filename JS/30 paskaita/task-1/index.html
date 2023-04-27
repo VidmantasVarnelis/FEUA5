@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="players">
+      <a class="link" href="./add-player.html">Create Player</a>
+      <table>
+        <thead>
+          <tr>
+            <th>Player Name</th>
+            <th>Player Year</th>
+            <th>Contact Info</th>
+            <th>Attributes</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="output"></tbody>
+      </table>
+    </div>
+    <div class="container update-form-container hidden">
+      <form id="update-form">
+        <h1>Update a Player</h1>
+        <input type="text" name="name" id="name" placeholder="Player name" />
+        <input
+          type="text"
+          name="year"
+          id="year"
+          placeholder="Player year of birth"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Player contact email"
+        />
+        <div>
+          <input type="radio" name="attributes" id="fast" value="Fast" />
+          <label for="fast">Fast</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="attributes"
+            id="conditioning"
+            value="Good conditioning"
+          />
+          <label for="conditioning">Good conditioning</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="attributes"
+            id="athletism"
+            value="Good athletism"
+          />
+          <label for="athletism">Good athletism</label>
+        </div>
+        <button type="submit">Update Player</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

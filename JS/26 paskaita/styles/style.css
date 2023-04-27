@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.guest-list {
+  padding: 3rem;
+}
+.guest-list .guests {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.guest-list .guests .guest {
+  flex-grow: 1;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 20rem;
+}
+.guest-list .guests .guest img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.guest-list .guests .guest .content {
+  padding: 1.5rem;
+}
+.guest-list .guests .guest .content .grid-container {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.5rem;
+}/*# sourceMappingURL=style.css.map */
