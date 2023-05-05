@@ -1,0 +1,15 @@
+{
+  "name": "1-paskaita",
+  "version": "1.0.0",
+  "description": "1 paskaita",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Vidmantas",
+  "license": "ISC",
+  "dependencies": {
+    "casual": "^1.6.2"
+  }
+}
