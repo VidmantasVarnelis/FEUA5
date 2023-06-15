@@ -29,7 +29,7 @@ form.addEventListener("submit", async (event) => {
 
   const userData = await onLoginUser(payload);
   if (userData.token) {
-    document.cookie = `token=${userData.token};`;
+    Cookies.set("token", userData.token, { expires: 0.1 });
     window.location.replace("./tweets.html");
   }
 });

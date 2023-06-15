@@ -5,9 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="tweets.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="tweets.js" defer></script>
   </head>
   <body>
-    Tweets
+    <button id="logout">Logout</button>
+    <div class="container">
+      <section>
+        <h1>My Tweets</h1>
+        <div id="my-tweets"></div>
+      </section>
+      <section>
+        <h1>Tweets</h1>
+        <div id="all-tweets"></div>
+      </section>
+    </div>
   </body>
 </html>

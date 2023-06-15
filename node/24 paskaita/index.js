@@ -95,7 +95,6 @@ server.post("/register", async (req, res) => {
       `
             INSERT INTO users (name, email, password)
             VALUES (?, ?, ?)
-            VALUES (?, ?, ?)
         `,
       [payload.name, payload.email, encryptedPassword],
     );
@@ -110,6 +109,31 @@ server.post("/register", async (req, res) => {
     return res.status(201).json({ token });
   } catch (error) {
     console.error(error);
+    return res.status(500).end();
+  }
+});
+
+server.get("/tweets", authenticate, async (req, res) => {
+  try {
+    const [tweets] = await dbPool.execute(
+      "SELECT tweets.id, content, tweets.created_at, tweets.updated_at, name, email FROM tweets JOIN users ON users.id=tweets.user_id",
+    );
+    return res.json(tweets);
+  } catch (error) {
+    console.log(error);
+    return res.status(500).end();
+  }
+});
+
+server.get("/user-tweets", authenticate, async (req, res) => {
+  try {
+    const [tweets] = await dbPool.execute(
+      "SELECT id, content, created_at, updated_at FROM tweets WHERE user_id=?",
+      [req.user.id],
+    );
+    return res.json(tweets);
+  } catch (error) {
+    console.log(error);
     return res.status(500).end();
   }
 });

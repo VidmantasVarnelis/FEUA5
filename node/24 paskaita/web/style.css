@@ -124,3 +124,21 @@ main .login-card .social-links .twitter {
 main .login-card .social-links .google {
   background-color: #ea4335;
 }
+
+.container {
+  padding: 3rem;
+}
+.container h1 {
+  margin-bottom: 1rem;
+}
+
+.tweet {
+  padding: 1rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  margin-bottom: 1rem;
+}
+
+.tweet h4 {
+  margin-bottom: 0.5rem;
+}
